@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset=utf-8 />
+    <title>Invoice Form</title>
+    <div> 
+        <h1 style="text-align: center "textalign>Invoice Form</h1>
+    </div> 
+       <style> 
+             table th,td {
+                   border: 1px solid blueviolet;
+        }
+         </style>
+ </head>
+<body>
+    <div style ="max-width: 40%">
+
+        <form action="/action_page.php"> 
+            <fieldset>
+                <legend> Client Information</legend>
+                <label for ="">Invoice to:<input type="text" name ="Invoice_to" placeholder = "Input Name"/>
+                <div>
+                    <label class="">Contact #:<input type="number" name="COntact_number" placehilder= "COntact number"/>
+                      
+                   <label class="">Date:<input type="date" name="Invoice date"/>
+                        
+                </div>
+            </fieldset>
+    </div>
+    
+    <fieldset> 
+        <tbody> 
+           <table style="width:100%;border:none;">
+                <thead>
+                    <tr style="background-color: #ccc;">
+                            <th style="width:50%";background-color: blue>Description Item</th>
+                            <th style="width:15%";background-color: blue>Quantity</th>
+                            <th style="width:15%";background-color: blue>Cost per Unit</th>
+                            <th style="width:20%";background-color: blue>TOtal</th>
+                        </tr>
+                    </tr>
+                <thead>
+        
+    
+                    <tr> 
+                        <td style="text-align: left"><textarea name="Description1" rows="1"cols="55" maxlength="100"></textarea></td>
+                        <td style="text-align: left"><input type="number" id="qty1" name="qty1" name="qty1"></td>
+                        <td style="text-align: left"><input type="" id="Cost_unit1" name="costunit1"></td>
+                        <td style="text-align: left"><input type="" id="amount1" name="amount1"></td>
+                    </tr>
+         
+                    <tr> 
+                        <td style="text-align: left"><textarea name="Description1" rows="1"cols="55" maxlength="100"></textarea></td>
+                        <td style="text-align: left"><input type="number" id="qty1" name="qty1" name="qty1"></td>
+                        <td style="text-align: left"><input type="" id="Cost_unit1" name="costunit1"></td>
+                        <td style="text-align: left"><input type="" id="amount1" name="amount1"></td>
+ 
+                    </tr>
+                    <tr> 
+                        <td style="text-align: left"><textarea name="Description1" rows="1"cols="55" maxlength="100"></textarea></td>
+                        <td style="text-align: left"><input type="number" id="qty1" name="qty1" name="qty1"></td>
+                        <td style="text-align: left"><input type="" id="Cost_unit1" name="costunit1"></td>
+                        <td style="text-align: left"><input type="" id="amount1" name="amount1"></td>
+   
+                    </tr>
+                    <tr> 
+                        <td style="text-align: left"><textarea name="Description1" rows="1"cols="55" maxlength="100"></textarea></td>
+                        <td style="text-align: left"><input type="number" id="qty1" name="qty1" name="qty1"></td>
+                        <td style="text-align: left"><input type="float" id="Cost_unit1" name="costunit1"></td>
+                        <td style="text-align: left"><input type="float" id="amount1" name="amount1"></td>
+   
+                    </tr>
+                    <tr> 
+                         
+                        <td colspan="2"></td>
+                        <td style="text-align: right">Subtotal</td>
+                        <td style="text-align: center"><input type="number"></td>
+                    </tr>
+                    <tr> 
+                         
+                        <td colspan="2"></td>
+                        <td style="text-align: right">Vat</td>
+                        <td style="text-align: center"><input type="number"></td>
+                    </tr>
+                    <tr> 
+                         
+                        <td colspan="2" row="0"></td>
+                        <td style="text-align: right">Total</td>
+                        <td style="text-align: center"><input type="number"></td>
+                    </tr>
+        
+             </table>
+              
+        </tbody>
+         
+    </fieldset> 
+    <div>
+                
+        <input id = "radio 1" type="radio" name="radio option" value="1"/>
+        <label for = "radio_1">Home</label>  
+        <input id = "radio 2" type="radio" name="radio option" value="1"/>
+        <label for = "radio_2">Work</label>  
+        <div style ="max-width: 40%">
+
+            <form action="/action_page.php"> 
+                <fieldset>
+                    <legend> Additional Information</legend>
+                     
+                        <td style="text-align: left"><textarea name="additional_info" rows="13"cols="55" maxlength="500"></textarea></td>
+                     
+                </fieldset>
+        </div>
+        <input type = "button" value="submit">
+
+
+         
+
+    </div>
+                 
+                
+  
+    
+   
+</body>
+</html>
